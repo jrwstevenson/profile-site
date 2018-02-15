@@ -1,3 +1,4 @@
+require('dotenv').config()
 var express     = require("express"),
     app         = express(),
     mongoose    = require("mongoose"),
@@ -5,8 +6,12 @@ var express     = require("express"),
     methodOverride = require("method-override");
     expressSanitizer = require("express-sanitizer")
 
-//APP CONFIG    
-mongoose.connect("mongodb://james:tupacshakur@ds237858.mlab.com:37858/profile-site");
+// Database 
+var dburl = process.env.DBURL;
+mongoose.connect(dburl);
+
+    //APP CONFIG    
+
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
