@@ -1,3 +1,28 @@
+/* CSS Color Scheme Variables */
+:root {
+    /* Sandy */
+    --main-light: #2c3531;
+    --main-dark: #116466;
+    --sec-light: #d9b08c;
+    --sec-dark: #ffcb9a;
+    --bg: #d1e8e2;
+    /* Blue Purple */
+    --main-light: #470059;
+    --main-dark: #632892;
+    --sec-light: #0496ff;
+    --sec-dark: #006ba6;
+    --bg: #d1f7f7;
+    /* Dark and Teal */
+    --main-light: #45a29e;
+    --main-dark: #66fcf1;
+    --sec-light: #0b0c10;
+    --sec-dark: #1f2833;
+    --bg: #c5c6c7;
+
+}
+
+
+/* Non Variables  */
 * {
     margin: 0;
     padding: 0;
@@ -143,12 +168,15 @@ header nav li {
     height: 100%;
     background-size: cover;
     z-index: -1;
-    background-color: #80a3db;
+    background-color: #4d2a18;
 }
 
 .hero h1 {
-    font: bold 60px "Open Sans", sans-serif;
+    /* font: bold 60px "Open Sans", sans-serif; */
     margin-bottom: 15px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px;
+    font-weight: 400;
 }
 
 .hero h3 {
