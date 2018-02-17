@@ -1,0 +1,19 @@
+<h1>Add new Project page</h1>
+<div class="ui main text container segment">
+    <div class="ui huge header">New Project</div>
+    <form class="ui form" action="/projects" method="POST">
+        <div class="field">
+            <label>Name</label>
+            <input type="text" name="project[name]" placeholder="Blog Title">
+        </div>
+        <div class="field">
+            <label>Image</label>
+            <input type="text" name="project[image]" placeholder="Image URL">
+        </div>
+        <div class="field">
+            <label>Description</label>
+            <textarea name="project[description]"></textarea>
+        </div>
+        <input type="submit" class="ui violet basic button big">
+    </form>
+</div>

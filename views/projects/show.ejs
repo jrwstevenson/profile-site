@@ -1,0 +1,7 @@
+<h1><%= project.name %></h1>
+<img src="<%= project.image %>" alt="Oh Shit!" style="width: 500px">
+<a href="/projects/<%= project.id %>/edit"</a>Edit</a>
+<form action="/projects/<%= project.id %>?_method=DELETE" method="POST">
+<button>DELETE</button>
+</form>
+<p><%= project.description %></p>

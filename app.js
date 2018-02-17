@@ -21,12 +21,12 @@ app.use(methodOverride("_method"));
 app.use(expressSanitizer());
 
 // Require Models
-var Blog    = require("./models/blogs");
-var Project = require("./models/projects");
+var Blog        = require("./models/blogs");
+var Project     = require("./models/projects");
 
 // Require Routes
-var blogRoutes = require("./routes/blog");
-var projectRoutes = require(".routes/projects");
+var blogRoutes      = require("./routes/blogs");
+var projectRoutes   = require("./routes/projects");
 
 // Use Routes Prefix
 app.use("/blogs", blogRoutes);

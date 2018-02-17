@@ -1,0 +1,6 @@
+<% include ../partials/header %>
+<h1>The is the Project page</h1>
+<% projects.forEach(function(project){ %>
+    <a href="/projects/<%= project.id %>"><h1><%= project.name %></h1></a>
+<% }); %>
+<% include ../partials/footer %>
