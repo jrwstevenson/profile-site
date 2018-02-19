@@ -1,28 +1,33 @@
 /* CSS Color Scheme Variables */
 :root {
     /* Sandy */
-    --main-light: #2c3531;
+    /* --main-light: #2c3531;
     --main-dark: #116466;
     --sec-light: #d9b08c;
     --sec-dark: #ffcb9a;
-    --bg: #d1e8e2;
+    --bg: #d1e8e2; */
     /* Blue Purple */
-    --main-light: #470059;
+    /* --main-light: #470059;
     --main-dark: #632892;
     --sec-light: #0496ff;
     --sec-dark: #006ba6;
-    --bg: #d1f7f7;
+    --bg: #d1f7f7; */
     /* Dark and Teal */
-    --main-light: #45a29e;
-    --main-dark: #66fcf1;
-    --sec-light: #0b0c10;
-    --sec-dark: #1f2833;
-    --bg: #c5c6c7;
+    --main-dark: #45a29e;
+    --main-light: #66fcf1;
+    --sec-dark: #0b0c10;
+    --sec-light: #1f2833;
+    --font: #c5c6c7;
 
 }
 
 
 /* Non Variables  */
+body {
+    background-color: var(--sec-dark);
+    color: var(--font); 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +48,7 @@ nav {
 a {
     text-decoration: none;
     opacity: 0.75;
-    color: white
+    color: var(--font)
 }
 
 a:hover {
@@ -55,7 +60,7 @@ a.btn {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    background-color: #3f51b5;
+    background-color: var(--main-dark);
     opacity: 1;
 }
 
@@ -67,7 +72,7 @@ section {
 }
 
 section:not(.hero):nth-child(even) {
-    background-color: #f5f5f5
+    background-color: var(--sec-light)
 }
 
 .grid {
@@ -80,7 +85,7 @@ section:not(.hero):nth-child(even) {
 hr {
     width: 250px;
     height: 3px;
-    background-color: #3f51b5;
+    background-color: var(--main-light);
     border: 0;
     margin-bottom: 50px;
 }
@@ -90,6 +95,7 @@ section h3.title {
     font: bold 30px "Open Sans", sans-serif;
     margin-bottom: 30px;
     text-align: center;
+    color: var(--main-light)
 }
 section p {
     max-width: 775px;
@@ -157,7 +163,7 @@ header nav li {
     justify-content: center;
     text-align: center;
     min-height: 100vh;
-    color: white;
+    color: var(--main-light);
 }
 
 .hero .background-image {
@@ -168,13 +174,23 @@ header nav li {
     height: 100%;
     background-size: cover;
     z-index: -1;
-    background-color: #4d2a18;
+    background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      275deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.95)
+    ),
+    /* bottom, image */
+    url(https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b9a4a76f7ed6634baffd807966f0ca8&auto=format&fit=crop&w=1912&q=80);
+    filter: grayscale(100%);
 }
 
 .hero h1 {
     /* font: bold 60px "Open Sans", sans-serif; */
     margin-bottom: 15px;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Kaushan Script', cursive;
     font-size: 100px;
     font-weight: 400;
 }
@@ -192,6 +208,17 @@ header nav li {
     opacity: 0;
     margin-top: 100px;
     animation: slideFade 1s 1s forwards;
+}
+
+.iconGrid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconGrid .icons {
+    width: 50px;
+    height: 50px;
+    
 }
 
 @keyframes slideFade {
@@ -257,7 +284,7 @@ header nav li {
 }
 
 .packages .grid li i {
-    color: #8c9eff;
+    color: var(--main-dark);
 }
 
 .packages .grid li h4{
@@ -279,6 +306,10 @@ header nav li {
     font-weight: 300;
     line-height: 1.5;
     margin: 40px 0 25px;
+}
+
+.testimonials .author {
+    color: var(--main-dark);
 }
 
 @media (max-width: 800px) {
@@ -309,7 +340,7 @@ header nav li {
     padding: 15px;
     margin-right: 30px;
     font-size:18px;
-    color: #555555;
+    color: var(--main-dark);
     flex: 1;
 }
 
@@ -325,8 +356,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #607d8b;
-    color: white;
+    background-color: var(--main-dark);
+    color: var(--main-light);
     padding: 20px 0;
 }
 
@@ -345,6 +376,7 @@ footer p {
     align-items: center;
     padding: 10px;
     text-align: center;
+    
 }
 
 @media (max-width: 1100px) {
