@@ -30,6 +30,10 @@ router.post("/", function(req, res){
     })
 })
 
+router.get("/clock", function(req, res){
+    res.render("projects/clock");
+});
+
 // Show Route
 router.get("/:id", function(req, res){
     Project.findById(req.params.id, function(err, foundProject){
@@ -77,5 +81,7 @@ router.delete("/:id", function(req, res) {
         }
     });
 });
+
+
 
 module.exports = router;
