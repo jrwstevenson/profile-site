@@ -1,24 +1,12 @@
 /* CSS Color Scheme Variables */
 :root {
-    /* Sandy */
-    /* --main-light: #2c3531;
-    --main-dark: #116466;
-    --sec-light: #d9b08c;
-    --sec-dark: #ffcb9a;
-    --font: #d1e8e2; */
-    /* Blue Purple */
-    /* --main-light: #470059;
-    --main-dark: #632892;
-    --sec-light: #0496ff;
-    --sec-dark: #006ba6;
-    --font: #d1f7f7; */
+    
     /* Dark and Teal */
     --main-dark: #45a29e;
     --main-light: #66fcf1;
     --sec-dark: #0b0c10;
     --sec-light: #1f2833;
     --font: #c5c6c7;
-
 }
 
 
@@ -297,7 +285,7 @@ header nav li {
 .packages .grid li {
     background: var(--main-dark);
     padding: 40px;
-    margin: 40px;
+    margin: 15px;
     flex-basis: 40%;
     text-align: center;
     border-radius: 10px;
@@ -321,6 +309,11 @@ header nav li {
     margin: 25px 0;
     color: white
 }
+.packages .grid li h5{
+    font-size: 25px;
+    margin: 25px 0;
+    color: white
+}
 
 .packages .grid li p{
     color: var(--sec-light)
@@ -330,18 +323,8 @@ header nav li {
     .packages .grid li {
         flex-basis: 100%;
         padding: 20px;
+        margin: 15px;
     }
-}
-
-@font-face {
-    font-family: "Against"; 
-    src: url("/Againts.woff") format("opentype");
-    font-style: normal;
-}
-
-#js30 {
-    font-family: "Against";
-    letter-spacing: 0.1em
 }
 
 #wowmundo {
@@ -379,7 +362,7 @@ header nav li {
 
 /* Contact section */
 
-.contact form {
+/* .contact form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -399,6 +382,10 @@ header nav li {
     font-size:18px;
     color: var(--main-dark);
     flex: 1;
+} */
+
+.contact a {
+    text-decoration: none; 
 }
 
 @media (max-width: 1000px) {
