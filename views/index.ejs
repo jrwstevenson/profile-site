@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>James Stevenson</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kaushan+Script|Love+Ya+Like+A+Sister|Permanent+Marker|Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kaushan+Script|Love+Ya+Like+A+Sister|Permanent+Marker|Rock+Salt|Comfortaa" rel="stylesheet">
+    <script src="scripts.js"></script>
    </head>
   <body>
     <!-- __________________ Header ________________________ -->
@@ -25,7 +25,19 @@
       <div class="background-image" ></div>
       <div class="hero-content-area">
         <h1>James Stevenson</h1>
-        <h3>Web Developer & Coffee Devotee</h3>
+        <h3>I am a
+            <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ 
+                  "Web Developer", 
+                  "Espresso Drinker", 
+                  "Problem Solver",
+                  "Hot Sauce Addict",
+                  "Computer Nerd" 
+              ]'>
+            </span>
+        </h3>
         <div class="iconGrid">
             <img class="icons" src="img/Icons/HTML5.png" alt="Oh shit">
             <img class="icons" src="img/Icons/CSS.png" alt="Oh shit">
@@ -69,7 +81,7 @@
     <!-- ___________________ Projects ________________________ -->
     <section class="packages">
       <h3 class="title">Some of my work</h3>
-      <p>Here's a little sample of the work that I've done.</p>
+      <p>Here's a little sample of the work that I've done. There is a collection of </p>
       <hr>
     
       <ul class="grid">
@@ -77,34 +89,69 @@
           <img  src="img/YelpCamp.jpg" class="projectImg">
           <h4>YelpCamp</h4>
           <p>Looking for the complete experience? Take a tour with one of our experts. They'll show you secrets that you're likely to miss otherwise.</p>
+          <div class="iconGrid">
+            <img class="icons" src="img/Icons/HTML5.png" alt="Oh shit">
+            <img class="icons" src="img/Icons/CSS.png" alt="Oh shit">
+            <img class="icons" src="img/Icons/Bootstrap.png" alt="Oh shit">
+            <img class="icons" src="img/Icons/Javascript.png" alt="Oh shit">
+            <img class="icons" src="img/Icons/Node.png" alt="Oh shit">
+            <img class="icons" src="img/Icons/Express.png" alt="Oh shit">
+            <img class="icons" src="img/Icons/mongoDB.png" alt="Oh shit">
+          </div>
         </li>
         <li>
-            <img  src="img/js30.jpg" class="projectImg">
-          <h4>JavaScript Playground</h4>
+          <img  src="img/js30.jpg" class="projectImg">
+          <h4 id="js30" >JavaScript <span style ="color: yellow;">30</span></h4>
           <p>Want to experience nature's beauty without all of that annoying exercise? Take a photo tour on one of our mountain buses.</p>
+          <div class="iconGrid">
+            <img class="icons" src="img/Icons/HTML5.png" alt="Oh shit">
+            <img class="icons" src="img/Icons/CSS.png" alt="Oh shit">
+            <img class="icons" src="img/Icons/Javascript.png" alt="Oh shit">
+           </div>
         </li>
         <li>
+          <a href="https://wowmundo.com" target="blank">
             <img  src="img/wowmundo.jpg" class="projectImg">
-          <h4>WOWmundo</h4>
+            <h4 id="wowmundo">WOWmundo</h4>
+          </a>
           <p>If bicycles are more your speed, consider taking a tour through one of our mountain bike paths. We'll provide the bikes, and lunch too!</p>
+          <div class="iconGrid">
+            <img class="icons" src="img/Icons/Wordpress.png" alt="Oh shit">
+          </div>
         </li>
         <li>
+          <a href="http://universalestates.net" target="blank">
             <img  src="img/unes.jpg" class="projectImg">
-          <h4>Universal Estates</h4>
+            <h4 id="unes">Universal Estates</h4>
+          </a>
           <p>Got a competitive spirit? Sign up for one of our mountain marathons! Try to reach the summit before anyone else.</p>
+          <div class="iconGrid">
+            <img class="icons" src="img/Icons/Wordpress.png" alt="Oh shit">
+          </div>
         </li>
       </ul>
     </section>
     <!-- ___________________ Education  _________________________ -->
-    <section class="testimonials">
-      <h3 class="title">Testimonials From Our Adventures</h3>
-      <hr>
-      <p class="quote">Wow! This tour made me realize how much I love mountains. After going on one of these tours, I can safely say that they are my favorite geographic feature, and my favorite word that starts with M.</p>
-      <p class="author">- Colt Steele</p>
-      <p class="quote">I never understood why people cared so much about mountains. But then I went on one of these tours. Now I can't understand people who don't care about mountains!</p>
-      <p class="author">- Elie Schoppik</p>
-      <p class="quote">If you want to understand the universe, head to the mountains. I mean, seriously. It's like, woah. You know? It's like that.</p>
-      <p class="author">- Tim Garcia</p>
+    <section class="packages">
+        <h3 class="title">Some of my work</h3>
+        <p>Here's a little sample of the work that I've done. There is a collection of </p>
+        <hr>
+      <ul class="grid">
+        <li>
+          <a href="https://www.udemy.com/certificate/UC-OMF0HPT6/" target="blank">
+            <img  src="https://udemy-certificate.s3.amazonaws.com/image/UC-OMF0HPT6.jpg" class="projectImg">
+            <h4>The Web Developer Bootcamp</h4>
+          </a>
+          <p>If bicycles are more your speed, consider taking a tour through one of our mountain bike paths. We'll provide the bikes, and lunch too!</p>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/certificate/UC-QDT1VT2F/" target="blank">
+            <img  src="https://udemy-certificate.s3.amazonaws.com/image/UC-QDT1VT2F.jpg" class="projectImg">
+            <h4>The Advanced Web Developer Bootcamp</h4>
+          </a>
+          <p>Got a competitive spirit? Sign up for one of our mountain marathons! Try to reach the summit before anyone else.</p>
+        </li>
+      </ul>
     </section>
     <!-- __________________ Contact _______________________ -->
     <section class="contact" id="contact">

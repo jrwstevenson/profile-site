@@ -5,13 +5,13 @@
     --main-dark: #116466;
     --sec-light: #d9b08c;
     --sec-dark: #ffcb9a;
-    --bg: #d1e8e2; */
+    --font: #d1e8e2; */
     /* Blue Purple */
     /* --main-light: #470059;
     --main-dark: #632892;
     --sec-light: #0496ff;
     --sec-dark: #006ba6;
-    --bg: #d1f7f7; */
+    --font: #d1f7f7; */
     /* Dark and Teal */
     --main-dark: #45a29e;
     --main-light: #66fcf1;
@@ -35,7 +35,7 @@ body {
 }
 
 html {
-    font: normal 16px sans-serif;
+    font: normal 16px 'Open Sans', sans-serif;
     color: #555555
 }
 
@@ -47,6 +47,10 @@ nav {
 
 a {
     text-decoration: none;
+}
+
+nav a {
+    
     opacity: 0.75;
     color: var(--font)
 }
@@ -291,25 +295,35 @@ header nav li {
 /* Packages Section */
 
 .packages .grid li {
-    padding: 50px;
-    flex-basis: 50%;
+    background: var(--main-dark);
+    padding: 40px;
+    margin: 40px;
+    flex-basis: 40%;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 
+                0 6px 20px 0 rgba(0, 0, 0, 1);
 }
 
 .packages .grid li i {
-    color: var(--main-dark);
+    color: var(--sec-dark);
 }
 
-.packages .grid li img {
-    width: 400px;
-    border-radius: 20px;
+.projectImg {
+    width: 100%;
+    /* border-radius: 20px; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 
                 0 6px 20px 0 rgba(0, 0, 0, 1);
 }
 
 .packages .grid li h4{
-    font-size: 30px;
+    font-size: 40px;
     margin: 25px 0;
+    color: white
+}
+
+.packages .grid li p{
+    color: var(--sec-light)
 }
 
 @media (max-width: 800px) {
@@ -317,6 +331,27 @@ header nav li {
         flex-basis: 100%;
         padding: 20px;
     }
+}
+
+@font-face {
+    font-family: "Against"; 
+    src: url("/Againts.woff") format("opentype");
+    font-style: normal;
+}
+
+#js30 {
+    font-family: "Against";
+    letter-spacing: 0.1em
+}
+
+#wowmundo {
+    color: #ff0090;
+    font-family: 'Comfortaa', cursive;
+}
+
+#unes {
+    color: #2991d6;
+    text-shadow: 0 0 5px white;
 }
 
 /* Testimonials Section */
@@ -452,7 +487,7 @@ footer p {
     object-fit: fill;
     flex: 2 1 200px;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 
                 0 6px 20px 0 rgba(0, 0, 0, 1);
 }
@@ -470,4 +505,4 @@ footer p {
          order: 0;
      }
  }
-  
+
