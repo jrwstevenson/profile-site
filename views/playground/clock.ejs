@@ -10,8 +10,9 @@
 
 <style>
   html {
-    background:#018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
-    background-size:cover;
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family:'helvetica neue';
     text-align: center;
     font-size: 10px;
@@ -58,6 +59,32 @@
     transform: rotate(90deg);
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+
+  .second-hand {
+    background: rgba(0,0,0,0.5)
+  }
+
+  .hour-hand {
+    height: 10px;
+    background: linear-gradient(
+          270deg,
+          rgba(0,0,0,1),
+          rgba(0,0,0,1),
+          rgba(0,0,0,1),
+          rgba(0,0,0,1),
+          rgba(0,0,0,1),
+          rgba(0,0,0,1),
+          rgba(0,0,0,1),
+          rgba(0,0,0,1),
+          rgba(0,0,0,1),
+          rgba(0,0,0,1),
+          rgba(0,0,0,0),
+          rgba(0,0,0,0),
+          rgba(0,0,0,0),
+          rgba(0,0,0,0)
+       
+          ) 
   }
 </style>
 

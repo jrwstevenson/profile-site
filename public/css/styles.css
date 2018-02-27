@@ -493,3 +493,23 @@ footer p {
      }
  }
 
+/* Projects */
+.playground .grid li {
+    background: var(--main-dark);
+    padding: 10px;
+    margin: 15px;
+    flex-basis: 30%;
+    text-align: center;
+    animation: fadeIn 1s 0.5s forwards;
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 
+                0 6px 20px 0 rgba(0, 0, 0, 1);
+    
+}
+
+.playground .grid li img {
+    width: 100%;
+    border-radius: 10px
+}
+

@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>James Stevenson</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kaushan+Script|Love+Ya+Like+A+Sister|Permanent+Marker|Rock+Salt|Comfortaa" rel="stylesheet">
-    <script src="scripts.js"></script>
-   </head>
-  <body>
-    <!-- __________________ Header ________________________ -->
-    <header>
-      <h2><a href="/"></a></h2>
-      <nav> <!-- Menu Items -->
-        <li><a href="/blogs">Blog</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </nav>
-    </header>
+<% include ./partials/header %>
     <!-- __________________ Hero ________________________ -->
     <section class="hero">
       <div class="background-image" ></div>
@@ -56,7 +35,7 @@
       
     </section>
     <!-- ___________________ About Me  _______________________ -->
-    <section class="about">
+    <section class="about" id="aboutme">
       <h3 class="title">About me</h3>
       <hr>
       <div class="about">
@@ -78,7 +57,7 @@
       </div>
     </section>
     
-    <!-- ___________________ Projects ________________________ -->
+    <!-- ___________________ Work ________________________ -->
     <section class="packages">
       <h3 class="title">Some of my work</h3>
       <p>Here's a little sample of the work that I've done. There is a collection of </p>
@@ -102,7 +81,7 @@
           </div>
         </li>
         <li>
-          <a href="/javascriptplay">
+          <a href="/playground">
             <img  src="img/learnjs.jpg" class="projectImg">
             <h4>JavaScript Playground</h4>
           </a>
@@ -136,7 +115,7 @@
       </ul>
     </section>
     <!-- ___________________ Education  _________________________ -->
-    <section class="packages">
+    <section class="packages" id="education">
         <h3 class="title">Education</h3>
         <p>Some certificates that I have been awarded for the completion of online developer courses.</p>
         <hr>

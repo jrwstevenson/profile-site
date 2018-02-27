@@ -25,12 +25,14 @@ var Blog        = require("./models/blogs");
 var Project     = require("./models/projects");
 
 // Require Routes
-var blogRoutes      = require("./routes/blogs");
-var projectRoutes   = require("./routes/projects");
+var blogRoutes          = require("./routes/blogs");
+var projectRoutes       = require("./routes/projects");
+var playgroundRoutes    = require("./routes/playground");
 
 // Use Routes Prefix
 app.use("/blogs", blogRoutes);
 app.use("/projects", projectRoutes)
+app.use("/playground", playgroundRoutes)
 
 //Index Route for Landing Page
 app.get("/", function(req, res){
