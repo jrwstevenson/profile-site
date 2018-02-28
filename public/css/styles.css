@@ -513,3 +513,11 @@ footer p {
     border-radius: 10px
 }
 
+button {
+    background: var(--sec-light);
+    color: var(--font);
+    border: 0;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
