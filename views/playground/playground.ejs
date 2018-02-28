@@ -5,14 +5,17 @@
         <% projects.forEach(function(project) { %>
             <li>
                 <div>
-                    <img src="img/<%= project.image %>" alt="">
-                    <h4><%= project.name %></h4>
-                    <p><%= project.description %></p>
+                    <div class="imageContainer" >
+                        <img src="img/<%= project.image %>" alt="">
+                    </div>
                     <a href="/playground/<%= project.slug %>">
-                        <button>View</button>
+                        <button><%= project.name %></button>
                     </a>
+                    <p><%= project.description %></p>
+                    
                 </div> 
             </li>
         <% }); %>
     </ul>
 </section>
+

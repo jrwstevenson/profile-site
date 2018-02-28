@@ -81,13 +81,13 @@ router.get("/", function(req, res) {
     },
     {
       name: "Countdown Timer",
-      description: "this is the clock description",
+      description: "What more can you say about a countdown timer",
       slug: "countdown",
       image: "countdown.jpg"
     },
     {
       name: "Whack A Mole",
-      description: "this is the clock description",
+      description: "How many can you score? Admittedly not great on mobile...",
       slug: "whackamole",
       image: "whackamole.jpg"
     }
