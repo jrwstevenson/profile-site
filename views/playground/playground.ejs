@@ -1,18 +1,19 @@
 <% include ../partials/header %>
 
+
 <section class="playground">
     <ul class="grid">
         <% projects.forEach(function(project) { %>
             <li>
                 <div>
-                    <div class="imageContainer" >
-                        <img src="img/<%= project.image %>" alt="">
-                    </div>
                     <a href="/playground/<%= project.slug %>">
+                        <div class="imageContainer item " >
+                            <img src="img/<%= project.image %>" alt="">
+                            <i class="fa fa-eye"></i>
+                        </div>
                         <button><%= project.name %></button>
                     </a>
-                    <p><%= project.description %></p>
-                    
+                    <p><%= project.description %></p> 
                 </div> 
             </li>
         <% }); %>
