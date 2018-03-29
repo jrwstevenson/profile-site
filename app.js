@@ -1,11 +1,11 @@
 require("dotenv").config();
 var express = require("express"),
-  app = express(),
-  dotenv = require("dotenv").config(),
-  mongoose = require("mongoose"),
-  bodyParser = require("body-parser"),
-  methodOverride = require("method-override"),
-  expressSanitizer = require("express-sanitizer");
+	app = express(),
+	dotenv = require("dotenv").config(),
+	mongoose = require("mongoose"),
+	bodyParser = require("body-parser"),
+	methodOverride = require("method-override"),
+	expressSanitizer = require("express-sanitizer");
 
 // Database
 var dburl = process.env.DBURL;
@@ -35,9 +35,9 @@ app.use("/playground", playgroundRoutes);
 
 //Index Route for Landing Page
 app.get("/", function(req, res) {
-  res.render("index");
+	res.render("index");
 });
 
 app.listen(process.env.PORT, process.env.IP, function() {
-  console.log("Profile Server Started");
+	console.log("Profile Server Started on port " + process.env.PORT);
 });

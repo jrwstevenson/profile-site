@@ -268,7 +268,7 @@ nav a:hover{
 /* Destinations Section */
 
 /* .destinations .grid li {
-    /* height: 500px; */
+    height: 500px;
     padding: 20px;
     background-clip: content-box;
     background-size: cover;
@@ -276,13 +276,13 @@ nav a:hover{
     flex-basis: 50%;
 }
 
-/* .destinations .grid li.small {
+.destinations .grid li.small {
     flex-basis: 50%;
 }
 
 .destinations .grid li.large {
-    flex-basis: 50%; */
-}
+    flex-basis: 50%;
+} */
 .destinations p {
     text-align: justify;
 }
